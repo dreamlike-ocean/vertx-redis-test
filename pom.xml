@@ -8,7 +8,7 @@
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-stack-depchain</artifactId>
                 <version>
-                    4.4.0
+                    4.4.2
                 </version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -63,9 +63,25 @@
         </profile>
     </profiles>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-jdk8 -->
+        <dependency>
+            <groupId>org.jetbrains.kotlinx</groupId>
+            <artifactId>kotlinx-coroutines-jdk8</artifactId>
+            <version>1.7.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.lettuce</groupId>
+            <artifactId>lettuce-core</artifactId>
+            <version>6.2.4.RELEASE</version>
+        </dependency>
    <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-mysql-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-redis-client</artifactId>
         </dependency>
         <dependency>
             <groupId>io.vertx</groupId>

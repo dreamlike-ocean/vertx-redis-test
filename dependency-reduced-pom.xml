@@ -117,22 +117,10 @@
                 <goals>
                   <goal>compile-no-fork</goal>
                 </goals>
-                <configuration>
-                  <buildArgs>
-                    <buildArg>--static</buildArg>
-                    <buildArg>--libc=glibc</buildArg>
-                    <buildArg>--gc=G1</buildArg>
-                    <buildArg>--initialize-at-run-time=io.netty.handler.codec.compression.ZstdOptions,io.netty.handler.ssl.BouncyCastleAlpnSslUtils</buildArg>
-                  </buildArgs>
-                  <skipNativeTests>true</skipNativeTests>
-                </configuration>
               </execution>
             </executions>
             <configuration>
               <buildArgs>
-                <buildArg>--static</buildArg>
-                <buildArg>--libc=glibc</buildArg>
-                <buildArg>--gc=G1</buildArg>
                 <buildArg>--initialize-at-run-time=io.netty.handler.codec.compression.ZstdOptions,io.netty.handler.ssl.BouncyCastleAlpnSslUtils</buildArg>
               </buildArgs>
               <skipNativeTests>true</skipNativeTests>
@@ -155,7 +143,7 @@
       <dependency>
         <groupId>io.vertx</groupId>
         <artifactId>vertx-stack-depchain</artifactId>
-        <version>4.4.0</version>
+        <version>4.4.2</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
